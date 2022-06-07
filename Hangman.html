@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+    <title>
+       Hangman!
+    </title>
+</head>
+<body>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <div class="center">
+        Play the Hangman Game!<br>
+        </div>
+        <div class="center">
+        <input  type = "text" id = "word" value=''> <button class="btn btn-primary" onclick="saveWord(); this.onclick = null">Word To be Guessed</button> 
+    </div>
+    <div class="center">
+        <p id="unrevealedWord" style="font-size: 30px"></p>
+        </div>
+        <div class = "center">
+            <p id = "title"> </p>
+            </div>
+        <div class = "center">
+            <p id = "keyboard"> </p>
+        </div>
+    </div>
+    <div class = "center">
+    <p id = "status"></p>
+    </div>
+    <div class="center">
+    <div id ="playAgainBtn"></div>
+    </div>
+</body>
+</html>
